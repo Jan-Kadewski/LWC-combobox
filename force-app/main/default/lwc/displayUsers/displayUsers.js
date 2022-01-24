@@ -4,7 +4,7 @@ let i = 0;
 export default class DisplayUsers extends LightningElement {
 
 
-    @track items = []; //this will hold key, value pair
+    @track users = []; //this will hold key, value pair
     @track value = ''; //initialize combo box value
 
     @track chosenValue = '';
@@ -16,7 +16,7 @@ export default class DisplayUsers extends LightningElement {
             //create array with elements which has been retrieved controller
             //here value will be Id and label of combobox will be Name
             for(i=0; i<data.length; i++)  {
-                this.items = [...this.items ,{value: data[i].Id , label: data[i].Name} ];                                   
+                this.users = [...this.users ,{value: data[i].Id , label: data[i].Name} ];                                   
             }                
             this.error = undefined;
         } else if (error) {
@@ -25,9 +25,9 @@ export default class DisplayUsers extends LightningElement {
         }
     }
 
-    //gettter to return items which is mapped with options attribute
-    get roleOptions() {
-        return this.items;
+    //gettter to return users which is mapped with options attribute
+    get userOptions() {
+        return this.users;
     }
 
     handleChange(event) {
