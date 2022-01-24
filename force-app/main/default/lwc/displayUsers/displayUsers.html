@@ -1,0 +1,54 @@
+<template>
+     <!-- <lightning-card title="Copy user" icon-name="custom:custom63">
+      <lightning-button label="click me" onclick={handleClick} >adsad</lightning-button>
+            <p class="sfds-m-bottom_small">
+            </p>
+                <template if:true={users}>
+                    <template for:each={users} for:item="user">
+                        <p key={user.Id}>{user.Id} {user.Name}</p>
+                    </template>
+                </template>
+</lightning-card>
+
+
+ <lightning-combobox
+    name="List of users"
+    label="Users"
+    value=""
+    placeholder="Select user"
+    options={options}
+    onchange={handleChange}
+    required
+>
+<p> you just selected {value} user</p>
+</lightning-combobox>
+ -->
+
+ <lightning-combobox
+ name="Role"
+ label="Role Name"
+ value={value}
+ placeholder=""
+ options={rolesList}
+ onchange={handleChange} >
+</lightning-combobox>    
+
+</template>
+
+
+<!-- <template>
+    <lightning-card title="Display User Role" icon-name="custom:custom63">
+        <lightning-combobox
+            name="Role"
+            label="Role Name"
+            placeholder="Choose Role"
+            value={value}
+            onchange={handleChange}
+            options={roleOptions}>
+        </lightning-combobox>
+        <p></p>
+        Selected Value:
+        <lightning-formatted-text title="Chosen Key" value={selectedValue}></lightning-formatted-text>
+    </lightning-card>
+
+</template> -->
