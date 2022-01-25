@@ -6,7 +6,7 @@ export default class DisplayUsers extends LightningElement {
 
     @track users = []; //this will hold key, value pair
     @track value = ''; //initialize combo box value
-
+    error = '';
     @track chosenValue = '';
 
     @wire(getAllUsers)

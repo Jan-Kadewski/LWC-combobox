@@ -1,17 +1,19 @@
 <template>
-    <lightning-card title="Users" icon-name="custom:custom63">
-        <lightning-combobox
-            name="User"
-            label="User Name"
-            placeholder="Choose User"
-            value={value}
-            onchange={handleChange}
-            options={userOptions}>
-        </lightning-combobox>
-        <p></p>
-        Selected Value:
-        <lightning-formatted-text title="Chosen Key" value={selectedValue}></lightning-formatted-text>
-        
-    </lightning-card>
-
+  <lightning-card title="Users" icon-name="custom:custom63">
+    <lightning-combobox
+      name="User"
+      label="User Name"
+      placeholder="Choose User"
+      value={value}
+      onchange={handleChange}
+      options={userOptions}
+    >
+    </lightning-combobox>
+    <p></p>
+    Selected Value:
+    <lightning-formatted-text
+      title="Chosen Key"
+      value={selectedValue}
+    ></lightning-formatted-text>
+  </lightning-card>
 </template>
